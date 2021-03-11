@@ -1,0 +1,38 @@
+/* .fridge img {
+  width: 1500px;
+  height: 1100px;
+  right: 10%;
+  top: -20px;
+} */
+
+.fridge {
+  display: flex;
+  position: absolute;
+  right: 15%;
+  bottom: 0px;
+}
+
+.fridge img {
+  height: 950px;
+  width: 1300px;
+}
+
+.toDoPaper {
+  background-color: #f9fb9a;
+  position: absolute;
+  width: 350px;
+  height: 500px;
+  bottom: 155px;
+  left: 155px;
+  border-radius: 10px;
+}
+
+.smartScreen {
+  background-color: black;
+  position: absolute;
+  width: 380px;
+  height: 610px;
+  right: 157px;
+  top: 170px;
+  border-radius: 10px;
+}
