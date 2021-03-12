@@ -1,19 +1,21 @@
 @import "reset.css";
 @import "fridge.css";
+@import "smartScreen.css";
+@import "clock.css";
+@import "variables.css";
+
+@font-face {
+  font-family: "DS-DIGI";
+  src: url("../DS-DIGI.TTF");
+}
 
 html {
   min-height: 100%;
 }
 
 body {
-  height: 100vh;
+  min-height: 100vh;
   background-image: url("/img/wallpaper.jpg");
-}
-
-.js-clock {
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-weight: ;
+  position: relative;
+  z-index: -1;
 }

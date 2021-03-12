@@ -28,6 +28,10 @@
 }
 
 .smartScreen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   background-color: black;
   position: absolute;
   width: 380px;
@@ -35,4 +39,5 @@
   right: 157px;
   top: 170px;
   border-radius: 10px;
+  z-index: 0;
 }
