@@ -3,19 +3,35 @@
 @import "smartScreen.css";
 @import "clock.css";
 @import "variables.css";
+@import "weather.css";
 
 @font-face {
   font-family: "DS-DIGI";
   src: url("../DS-DIGI.TTF");
 }
 
+
+
 html {
   min-height: 100%;
 }
 
 body {
-  min-height: 100vh;
-  background-image: url("/img/wallpaper.jpg");
+  min-height: 200vh;
+  
   position: relative;
+ 
   z-index: -1;
+}
+
+#background {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+ top: 0; 
+}
+
+.todo-header {
+  font-size: 30px;
+  font-family: 'Nanum Pen Script', cursive;
 }

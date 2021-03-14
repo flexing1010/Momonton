@@ -6,12 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="font/Rimouski.css">
   </head>
 
   <body>
+    <div id="background">
+      <img src="img/wallpaper.jpg">
+    </div>
     <div class="fridge">
       <img src="img/smartFridge.png" />
-      <div class="toDoPaper"></div>
+      <div class="toDoPaper">
+        <h1 class="todo-header">Hello! What is your name?</h1>
+      </div>
       <div class="smartScreen">
       
       <div class="clock">
@@ -31,6 +39,28 @@
         <div id="seconds"></div>
         <div id="ampm"></div>
       </div>
+
+      <div class="container">
+        <div class="app-title"><p>Weather</p></div>
+        <div class="notification"></div>
+        <div class="weather-container">
+          <div class="weather-icon"><img src="icons/unknown.png"></div>
+          <div class="temperature-value"><p>– °<span>C</span></p></div>
+          <div class="temperature-description"><p> - </p></div>
+          <div class="location"><p> - </p></div>
+
+
+        </div>
+
+
+
+
+      </div>
+
+
+
+
+
     </div>
 
     
@@ -39,5 +69,6 @@
     </div>   -->
     <script src="js/index.js"></script>
     <script src="js/clock.js"></script>
+    <script src="js/weather.js"></script>
   </body>
 </html>
