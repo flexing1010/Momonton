@@ -8,8 +8,7 @@
 .fridge {
   display: flex;
   position: absolute;
-  right: 15%;
-  bottom: 0px;
+  bottom: 0;
 }
 
 .fridge img {
@@ -18,6 +17,7 @@
 }
 
 .toDoPaper {
+  font-family: "Nanum Pen Script", cursive;
   background-color: #f9fb9a;
   position: absolute;
   width: 350px;
@@ -25,14 +25,15 @@
   bottom: 155px;
   left: 155px;
   border-radius: 10px;
+  padding: 10px;
 }
 
 .smartScreen {
+  background-color: black;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: black;
   position: absolute;
   width: 380px;
   height: 610px;

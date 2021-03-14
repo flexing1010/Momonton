@@ -28,7 +28,7 @@ const KELVIN = 273,
     }
 
 function cToF (temperature) {
-    reture (temperature * 9/5) + 32;
+    return (temperature * 9/5) + 32;
 }
 
 tempElement.addEventListener("click", function(){
@@ -62,7 +62,7 @@ function showError(error) {
 }
 
 function getWeather(latitude, longitude){
-    let api = `https://cors-anywhere.herokuapp.com/http://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${KEY}`;
+    let api = `http://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${KEY}`;
     fetch(api).then(function(response){
         let data = response.json();
         return data;

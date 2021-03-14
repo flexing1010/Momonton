@@ -1,0 +1,26 @@
+.todo-header {
+  font-size: 30px;
+}
+
+.form,
+.greetings {
+  display: none;
+}
+
+.showing {
+  display: block;
+}
+
+.todo-name {
+  font-family: "Nanum Pen Script", cursive;
+  font-size: 24px;
+  outline: none;
+  border: none;
+  background-color: #f9fb9a;
+  border-bottom: 1px solid;
+  text-align: center;
+}
+
+.greetings {
+  font-size: 45px;
+}

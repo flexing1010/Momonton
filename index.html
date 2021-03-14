@@ -6,67 +6,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="css/styles.css" />
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="font/Rimouski.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="font/Rimouski.css" />
   </head>
 
   <body>
     <div id="background">
-      <img src="img/wallpaper.jpg">
+      <img src="img/wallpaper.jpg" />
     </div>
-    <div class="fridge">
+
+    <main class="fridge">
       <img src="img/smartFridge.png" />
       <div class="toDoPaper">
-        <h1 class="todo-header">Hello! What is your name?</h1>
+        <form class="js-form form">
+          <span class="todo-header">Hello! What is your name?</span>
+          <input class="todo-name" type="text" />
+        </form>
+        <span class="js-greetings greetings"></span>
       </div>
       <div class="smartScreen">
-      
-      <div class="clock">
-        <div class="hour">
-          <div class="hr" id="hr"></div>
-        </div>
-        <div class="min">
-          <div class="mn" id="mn"></div>
-        </div>
-        <div class="sec">
-          <div class="sc" id="sc"></div>
-        </div> 
-      </div>
-      <div id="digitalClock">
-        <div id="hour"></div>
-        <div id="minutes"></div>
-        <div id="seconds"></div>
-        <div id="ampm"></div>
-      </div>
-
-      <div class="container">
-        <div class="app-title"><p>Weather</p></div>
-        <div class="notification"></div>
-        <div class="weather-container">
-          <div class="weather-icon"><img src="icons/unknown.png"></div>
-          <div class="temperature-value"><p>– °<span>C</span></p></div>
-          <div class="temperature-description"><p> - </p></div>
-          <div class="location"><p> - </p></div>
-
-
+        <div class="clock">
+          <div id="date"></div>
+          <div class="hour">
+            <div class="hr" id="hr"></div>
+          </div>
+          <div class="min">
+            <div class="mn" id="mn"></div>
+          </div>
+          <div class="sec">
+            <div class="sc" id="sc"></div>
+          </div>
         </div>
 
+        <div id="digitalClock">
+          <div id="hour"></div>
+          <div id="minutes"></div>
+          <div id="seconds"></div>
+          <div id="ampm"></div>
+        </div>
 
-
-
+        <div class="container">
+          <div class="app-title"><p>Weather</p></div>
+          <div class="notification"></div>
+          <div class="weather-container">
+            <div class="weather-icon"><img src="icons/unknown.png" /></div>
+            <div class="temperature-value">
+              <p>– °<span>C</span></p>
+            </div>
+            <div class="temperature-description"><p>-</p></div>
+            <div class="location"><p>-</p></div>
+          </div>
+        </div>
       </div>
+    </main>
 
-
-
-
-
-    </div>
-
-    
-    <!-- <div class="js-clock">
-      <h1 class="js-clockTitle">00:00</h1>
-    </div>   -->
+    <script src="js/greeting.js"></script>
     <script src="js/index.js"></script>
     <script src="js/clock.js"></script>
     <script src="js/weather.js"></script>
