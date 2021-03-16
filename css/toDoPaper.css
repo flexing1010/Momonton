@@ -1,3 +1,16 @@
+@keyframes fadein {
+  from {
+
+    transform:  translateX(-10px);
+  }
+  to{
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+
+
 .todo-header {
   font-size: 30px;
 }
@@ -8,7 +21,9 @@
 }
 
 .showing {
+  opacity: 0;
   display: block;
+  animation: fadein 1.5s ease-in-out forwards;
 }
 
 .todo-name {
@@ -17,10 +32,60 @@
   outline: none;
   border: none;
   background-color: #f9fb9a;
-  border-bottom: 1px solid;
+  border-bottom: var(--border-basic);
   text-align: center;
+}
+
+
+
+.js-toDoBox {
+  opacity: 0;
+  animation: fadein 2s ease-in-out forwards;
+}
+
+.js-toDoForm input {
+  font-family: "Nanum Pen Script", cursive;
+  background-color: #f9fb9a;
+  outline: none;
+  border: none;
+  font-size: 25px;  
+  width: 100%;
+  margin: 10px 0;
 }
 
 .greetings {
   font-size: 45px;
 }
+
+
+.to-do {
+  display: flex;
+  justify-content: flex-start;
+  font-size: 20px;
+  
+}
+
+.js-toDo  {
+  width: 50%;
+
+}
+
+.js-finished {
+  width: 50%;
+}
+
+/*.js-toDoList li {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  border-bottom: var(--border-basic);
+  margin
+}
+
+.js-finishedList button {
+  
+  width: 90%;
+  border-bottom: var(--border-basic);
+}
+
+*/

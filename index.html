@@ -27,6 +27,21 @@
           <input class="todo-name" type="text" />
         </form>
         <span class="js-greetings greetings"></span>
+        <div class="js-toDoBox">
+          <form class="js-toDoForm">
+            <input type="text" placeholder="what do you need to do today?" />
+          </form>
+          <div class="to-do">
+            <div class="js-toDo">
+              <h1>Things to do</h1>
+              <ul class="js-toDoList"></ul>
+            </div>
+            <div class="js-finished">
+              <h1>Finished</h1>
+              <ul class="js-finishedList"></ul>
+            </div>
+          </div>
+        </div>
       </div>
       <div class="smartScreen">
         <div class="clock">
@@ -64,6 +79,7 @@
       </div>
     </main>
 
+    <script src="js/toDoList.js"></script>
     <script src="js/greeting.js"></script>
     <script src="js/index.js"></script>
     <script src="js/clock.js"></script>

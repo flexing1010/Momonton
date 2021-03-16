@@ -1,6 +1,7 @@
 const form =document.querySelector(".js-form"),
     input = form.querySelector("input"),
-    greeting = document.querySelector(".js-greetings")
+    greeting = document.querySelector(".js-greetings"),
+    toDoBox = document.querySelector(".js-toDoBox");
 
 const USER_LS = "currentUser",
     SHOWING_CN = "showing";
@@ -21,6 +22,7 @@ function handleSubmit(event){
  function askForName() {
      form.classList.add(SHOWING_CN);
      form.addEventListener("submit", handleSubmit)
+     form.addEventListener("submit", showToDo);
 
  }
     
@@ -38,13 +40,20 @@ function loadName(){
     const currentUser = localStorage.getItem(USER_LS);
     if(currentUser === null){
         askForName()
+        hideToDo()
     } else {
         paintGreeting(currentUser);
+        showToDo()
     }
 }
 
+function showToDo(){
+    toDoBox.style.display="block";
+}
 
-
+function hideToDo(){
+    toDoBox.style.display= "none";
+}
 
 
 
