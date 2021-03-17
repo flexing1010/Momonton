@@ -5,6 +5,7 @@
 @import "variables.css";
 @import "weather.css";
 @import "toDoPaper.css";
+@import "background.css";
 
 @font-face {
   font-family: "DS-DIGI";

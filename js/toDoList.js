@@ -17,15 +17,20 @@ function handleSubmit(event){
     toDoInput.value = "";
 }
 
+//painting functions
 function paintToDos(text){
     const li = document.createElement("li"),
          span = document.createElement("span"),
          //btns = document.createElement("div"),
          delBtn = document.createElement("button"),
          doneBtn = document.createElement("button");
-         delBtn.innerHTML = "❎";
+
+
+         delBtn.id="delBtn";
+         doneBtn.id="doneBtn";
+        // delBtn.innerHTML = "❎";
          delBtn.addEventListener("click", deleteToDo);
-         doneBtn.innerHTML = "✅";
+         //doneBtn.innerHTML = "✅";
          doneBtn.addEventListener("click", moveToDone);
          span.innerText = text; 
     const newId = idNum++;
@@ -46,18 +51,21 @@ function paintToDos(text){
 function paintToDosDone(text){
     const li = document.createElement("li"),
          span = document.createElement("span"),
-         //btns = document.createElement("div")
-         delBtn = document.createElement("button"),
+         
+         backBtn = document.createElement("button"),
          doneBtn = document.createElement("button");
-         delBtn.innerHTML = "❎";
-         delBtn.addEventListener("click", deleteToDoDone);
-         doneBtn.innerHTML = "✅";
-         doneBtn.addEventListener("click", moveToDo);
+         
+         backBtn.id="backBtn"
+         doneBtn.id="doneBtn";
+         //backBtn.innerHTML = "❎";
+         doneBtn.addEventListener("click", deleteToDoDone);
+         //doneBtn.innerHTML = "✅";
+         backBtn.addEventListener("click", moveToDo);
          span.innerText = text; 
     const newId = idNum++;
     li.appendChild(span);
-    // li.appendChild(btns);
-    li.appendChild(delBtn);
+    //li.appendChild(btns);
+    li.appendChild(backBtn);
     li.appendChild(doneBtn);
     li.id =newId;
     finishedList.appendChild(li);
@@ -68,6 +76,8 @@ function paintToDosDone(text){
     toDosDone.push(toDoObj);
     saveToDosDone();
 }
+//painting functions//
+
 
 //saving functions
 function saveToDos(){
@@ -99,6 +109,9 @@ function loadToDoDone() {
         })
     }
 }
+//loading functions//
+
+
 
 //deleting functions//
 function deleteToDo (event) {
@@ -116,6 +129,7 @@ function deleteToDo (event) {
 function deleteToDoDone (event) {
     const btn = event.target,
          li = btn.parentNode;
+         
          finishedList.removeChild(li);
     
     const cleandToDosDone = toDosDone.filter(function(todo) {
@@ -133,6 +147,8 @@ function moveToDone(event) {
        li = btn.parentNode,
        span =li.firstChild.innerText;
        toDoList.removeChild(li);
+
+       
     
     const moveToDone = toDos.filter(function(todo){ 
         return todo.id !== parseInt(li.id);
@@ -167,3 +183,4 @@ function init() {
 }
 
 init();
+
