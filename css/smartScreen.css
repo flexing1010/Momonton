@@ -72,3 +72,11 @@ iframe {
 .home {
   color: rgba(255, 255, 255, 0.4);
 }
+
+.icons img:hover {
+  cursor: pointer;
+}
+
+.icons svg:hover {
+  cursor: pointer;
+}

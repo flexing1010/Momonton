@@ -1,6 +1,6 @@
 const smartBg = document.querySelector(".smart-bg");
 
-const IMG_NUMBER = 4
+const IMG_NUMBER = 10
 
 function genRandom(){
     const number = Math.floor(Math.random() * IMG_NUMBER);

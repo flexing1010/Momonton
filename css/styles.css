@@ -6,6 +6,7 @@
 @import "weather.css";
 @import "toDoPaper.css";
 @import "background.css";
+@import "melon.css";
 
 @font-face {
   font-family: "DS-DIGI";
@@ -31,4 +32,14 @@ body {
   position: fixed;
   top: 0;
   left: 0;
+}
+
+.showing {
+  opacity: 0;
+  display: block;
+  animation: fadein 1.5s ease-in-out forwards;
+}
+
+.hidden {
+  display: none;
 }

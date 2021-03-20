@@ -1,0 +1,163 @@
+.melon {
+  position: absolute;
+  bottom: 45px;
+  background-color: #18191a;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 92.6%;
+  z-index: 1000;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+
+.playlist-container {
+  height: 92.6%;
+  width: 100%;
+  color: white;
+  padding: 10px;
+}
+
+.playlist-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 10%;
+  font-size: 20px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  padding-bottom: 10px;
+}
+
+.playlist-header div:first-child {
+  width: 33%;
+}
+.playlist-header div:nth-child(2) {
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+  width: 33%;
+}
+.playlist-header div:last-child {
+  display: flex;
+  width: 33%;
+  justify-content: flex-end;
+  margin-top: 5px;
+}
+
+.header-icon i {
+  color: white;
+  margin-left: 10px;
+}
+
+.playlist {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.song {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.song:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+  transition: background-color 0.5s ease-in-out;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.song__column {
+  display: flex;
+}
+
+.song__column:last-child {
+  padding-right: 10px;
+}
+
+.song__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.song__title {
+  font-size: 20px;
+}
+.song__artist {
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.song__column img {
+  height: 50px;
+  width: 50px;
+  border-radius: 10px;
+  margin: 0 10px;
+}
+
+.cover {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80%;
+  width: 100%;
+}
+
+.cover img {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+.melon audio {
+  margin-top: 57px;
+  width: 100%;
+  border-radius: none;
+}
+
+audio::-webkit-media-controls-panel {
+  background-color: rgba(0, 0, 0, 0.2);
+  outline: 0;
+  border: none;
+}
+
+.artist {
+  display: flex;
+  flex-direction: column;
+  color: whitesmoke;
+  text-align: center;
+}
+
+.artist h1 {
+  font-size: 30px;
+}
+
+.artist h2 {
+  font-size: 20px;
+  margin-top: 10px;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.js-mraz {
+  display: none;
+}
+.js-maroon5 {
+  display: none;
+}
+.js-coldplay {
+  display: none;
+}
+
+.js-oasis {
+  display: none;
+}

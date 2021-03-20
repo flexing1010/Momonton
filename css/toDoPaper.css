@@ -17,12 +17,6 @@
   display: none;
 }
 
-.showing {
-  opacity: 0;
-  display: block;
-  animation: fadein 1.5s ease-in-out forwards;
-}
-
 .todo-name {
   font-family: "Nanum Pen Script", cursive;
   font-size: 24px;
