@@ -4,9 +4,9 @@
   position: absolute;
   align-items: center;
   background-color: white;
-  z-index: 2;
-  left: 200px;
-  top: 100px;
+  z-index: 0;
+  left: 100px;
+  top: 50px;
   width: 200px;
   height: 280px;
   border-radius: 10px;
@@ -15,8 +15,7 @@
 .calendar-head {
   position: relative;
   height: 160px;
-
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
 #calendar-bg img {
