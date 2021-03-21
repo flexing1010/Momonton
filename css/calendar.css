@@ -1,0 +1,52 @@
+.calendar {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  align-items: center;
+  background-color: white;
+  z-index: 2;
+  left: 200px;
+  top: 100px;
+  width: 200px;
+  height: 280px;
+  border-radius: 10px;
+}
+
+.calendar-head {
+  position: relative;
+  height: 160px;
+
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+#calendar-bg img {
+  width: 100%;
+  height: 125px;
+  border-radius: 10px;
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+
+#monthName {
+  position: absolute;
+  color: black;
+  font-weight: bolder;
+  font-size: 25px;
+  bottom: 0;
+  left: 30%;
+  margin-bottom: 5px;
+}
+
+#year {
+  font-size: 1.3rem;
+  margin-top: 10px;
+}
+
+#dayNumber {
+  font-size: 3rem;
+  margin: 5px 0;
+}
+
+#dayName {
+  color: rgba(0, 0, 0, 0.4);
+}
