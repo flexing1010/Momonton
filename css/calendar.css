@@ -6,16 +6,21 @@
   background-color: white;
   z-index: 0;
   left: 5%;
-  top: 6%;
+  top: 100px;
   width: 200px;
   height: 280px;
   border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .calendar-head {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
   position: relative;
-  height: 160px;
   background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  height: 160px;
 }
 
 #calendar-bg img {
@@ -27,12 +32,9 @@
 }
 
 #monthName {
-  position: absolute;
   color: black;
   font-weight: bolder;
   font-size: 25px;
-  bottom: 0;
-  left: 30%;
   margin-bottom: 5px;
 }
 
